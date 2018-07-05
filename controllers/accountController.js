@@ -6,6 +6,7 @@ exports.create = (req, res) => {
         let account = web3.eth.accounts.create();
         console.log(`Account was created addr: ${account.address}`);
         res.json({
+            type: 0,
             success: true,
             address: account.address,
             privateKey: account.privateKey
