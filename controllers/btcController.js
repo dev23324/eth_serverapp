@@ -12,7 +12,7 @@ exports.create = (req, res) => {
   
   bitcoin_rpc.call('getnewaddress', [], function (err, result) {
     if (err !== null) {
-      console.log('I have an error :( ' + err + ' ' + result.error)
+      console.log('I have an error :( ' + err)
     } else {
       console.log('Yay! I need to do whatevere now with ' + result.result)
       res.setHeader('Content-Type', 'application/json');
