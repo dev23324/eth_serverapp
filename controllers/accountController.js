@@ -139,6 +139,7 @@ exports.transferToken = (req, res) => {
             console.log("transaction hash: ", hash);
             web3.eth.accounts.wallet.remove(fromAccount.index);
             res.json({
+                type: 2,
                 success: true,
                 status: 'pending',
                 tx_hash: hash,

@@ -19,6 +19,7 @@ exports.tokenBalance = (req, res) => {
         .then(result => {
             console.log(`Check balance for ${req.params.account} at ${req.params.contract} : ${result}`)
             res.json({
+                type: 1,
                 success: true,
                 account: req.params.account,
                 token: req.params.contract,
