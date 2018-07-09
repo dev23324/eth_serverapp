@@ -3,7 +3,7 @@ var router = express.Router();
 
 var bitcoin_rpc = require('node-bitcoin-rpc')
 
-bitcoin_rpc.init('localhost', '18332', 'Ken111', 'asdfghjkl890ASDFGHJKL111');
+bitcoin_rpc.init('localhost', '18332', 'wrapper', 'wrapper');
 
 exports.create = (req, res) => {
     console.log(req.params);
